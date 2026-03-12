@@ -4,7 +4,7 @@ public class Studentgrade {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        double total;
+        double total();
 
         System.out.print("Enter english marks: ");
         double a = sc.nextDouble();
@@ -22,8 +22,13 @@ public class Studentgrade {
         double e = sc.nextDouble();
 
         System.out.println("total: " + (a+b+c+d+e));
-        System.out.println("average: " + ((a+b+c+d+e)/5));
-        System.out.println("pass");
+        System.out.println("average: " + (total/5));
+        if (total>=300) {
+           System.out.print("pass ");
+        } 
+        else {
+             System.out.print(" fail");
        }
 
     }
+}
